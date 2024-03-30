@@ -1,0 +1,7 @@
+boot.img,1,e266,808000
+qboot.bin,1,dee5,5377000
+update_uImage,1,d42,8fe000
+RTFM_SH4A_MA100.bin,0,0,0
+system.img,1,a7be,15c00000
+bios.bin,1,5105,c96c
+s-bios.bin,1,a016,4a24

@@ -1,0 +1,12 @@
+#
+#	アプリケーション起動リスト
+#
+LAUNCH_SYSMAN			# Sysman起動
+LAUNCH_MSC				# MSCApp起動
+LAUNCH_ENT				# EnterApp起動
+LAUNCH_NAVI				# NaviApp起動
+LAUNCH_GUI				# GUIApp起動
+#LAUNCH_TEST1
+
+
+
