@@ -1,10 +1,10 @@
 # firmware structure of Kenwood MXLO15KLG4.
 
-[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://secure.wayforpay.com/button/b6ae25838ac10)    
+[![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://secure.wayforpay.com/button/b6ae25838ac10)
 
-Based on firmware 1G(S_V4_2_0206_0500) for Mitsubishi Outlander.  
+Based on firmware 1G(S_V4_2_0206_0500) for Mitsubishi Outlander.
 
-Structure firmware the same for  Mitsubishi ASX, Pajero and Lancer  
+Structure firmware the same for  Mitsubishi ASX, Pajero and Lancer
 
 | Folder                       |  Description                                                        |
 |------------------------------|---------------------------------------------------------------------|
@@ -26,7 +26,7 @@ SXM_V0B2A01
 TCONF_V1_9_0006_0500
 TOUCH_V0_0_2246_0200
 UBOOT_V4_2_0206_0500_release
-# 
+#
 # end
 #
 ```
@@ -55,7 +55,7 @@ UBOOT_V4_2_0206_0500_release
 | bin/system.img   | [system image  with Android 4.2.2 and all applications](#edit-systemimg)               |
 | bin/boot.img     | boot.img (to unpack and pack you can use unmkbootimg и mkbootimg)   |
 
-# Structure of datainfo 
+# Structure of datainfo
 ```
 boot.img,1,e266,808000
 qboot.bin,1,dee5,5377000
@@ -66,12 +66,12 @@ bios.bin,1,5105,c96c
 s-bios.bin,1,a016,4a24
 ```
 ```
-<Name of File>,1,<CRC16-CCITT Kermit>, <Size of File>
+<Name of File>,1,<CRC16-CCITT Kermit>,<Size of File in hex notatinon>
 ```
 
 # Editing of NaviNk_V4_2_0206_0500.nfu
 1. Edit NaviNk_V4_2_0206_0500.nfu with WinHex
-2. calculate  checksum 8 bit 
+2. calculate  checksum 8 bit
 3. update CRC8  inside SumList.ini.
 ```
 NaviNk_V4_2_0306_0500.nfu : <8 bit checksum>
@@ -102,9 +102,9 @@ sudo unmount system
 
 # Структура прошивки для Kenwood MXLO15KLG4.
 
-На основе структура прошивки  1G(S_V4_2_0206_0500) для Mitsubishi Outlander.  
+На основе структура прошивки  1G(S_V4_2_0206_0500) для Mitsubishi Outlander.
 
-Структура прошивки анологична для других автомобилей как Mitsubishi ASX, Pajero, Lancer  
+Структура прошивки аналогична для других автомобилей как Mitsubishi ASX, Pajero, Lancer
 
 | Папка                        |  Описание                                                           |
 |------------------------------|---------------------------------------------------------------------|
@@ -127,7 +127,7 @@ SXM_V0B2A01
 TCONF_V1_9_0006_0500
 TOUCH_V0_0_2246_0200
 UBOOT_V4_2_0206_0500_release
-# 
+#
 # end
 #
 ```
@@ -172,7 +172,7 @@ s-bios.bin,1,a016,4a24
 
 # редактирование NaviNk_V4_2_0206_0500.nfu
 1. редактируем
-2. вычисляем  checksum 8 bit 
+2. вычисляем  checksum 8 bit
 3. обновляем файл SumList.ini который рядом с NaviNk_V4_2_0206_0500.nfu
 ```
 NaviNk_V4_2_0306_0500.nfu : <8 bit checksum>
@@ -186,7 +186,7 @@ NaviNk_V4_2_0306_0500.nfu : <8 bit checksum>
 5. Не забываем обновить Хеш  по адресу 0x20
 
 # редактирование system.img
-1. Монтируем раздел в директорию system 
+1. Монтируем раздел в директорию system
 ```
 sudo mkdir system
 sudo mount -rw system.img system
